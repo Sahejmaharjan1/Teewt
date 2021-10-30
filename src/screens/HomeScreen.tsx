@@ -1,26 +1,13 @@
 import axios, { AxiosResponse } from 'axios';
 import React, { FC, useCallback, useEffect, useState } from 'react';
-import { StyleSheet, ActivityIndicator, Text, Image, View } from 'react-native';
+import { ActivityIndicator, Text, Image, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feeds, useProfile } from '../components/home';
 import { UserFeed } from '../components/home/types';
 import Colors from '../constants/Colors';
 import { NotifierTitle } from '../utils/enums';
 import notifier from '../utils/Notifiers/Notifier';
-
-const styles = StyleSheet.create({
-  homeScreen: {
-    backgroundColor: Colors.WHITE,
-    flex: 1,
-  },
-  iconWrapper: {
-    alignItems: 'center',
-  },
-  icon: {
-    width: 50,
-    height: 50,
-  },
-});
+import { styles } from './HomeStyle';
 
 const HomeScreen: FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -61,7 +48,6 @@ const HomeScreen: FC = () => {
         <Image source={require('../assets/Teewter_Logo.jpg')} style={styles.icon} />
       </View>
       <Feeds userPosts={userPosts as UserFeed} />
-      {/* <BottomNav /> */}
     </SafeAreaView>
   );
 };

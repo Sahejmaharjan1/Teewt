@@ -12,12 +12,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginTop: 10,
+    marginBottom: 20,
   },
   loginForm_container: {
     flexGrow: 1,
   },
   loginForm_containerPressable: { flex: 1 },
-  loginForm_containerWrapper: { justifyContent: 'center', flex: 1 },
+  loginForm_containerWrapper: { flexGrow: 1, justifyContent: 'center', overflow: 'hidden' },
   loginForm_forgotPasswordContainer: {
     marginBottom: 20,
     flexDirection: 'row',

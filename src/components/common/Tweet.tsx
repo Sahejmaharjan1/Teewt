@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
   },
   userName: {
     paddingBottom: 3,
+    color: Colors.Off_Black,
   },
   userHandle: {
     paddingBottom: 3,
@@ -39,10 +40,12 @@ const styles = StyleSheet.create({
   },
   post: {
     paddingBottom: 10,
+    color: Colors.Off_Black,
   },
   like: {
     marginRight: 20,
     width: 80,
+    color: Colors.Off_Black,
   },
   rowStyle: {
     flexDirection: 'row',
@@ -72,7 +75,7 @@ export function Tweet({ image, userId, twitterHandle, post, likes }: TweetProps)
         </Text>
         <View style={styles.row}>
           <Text style={styles.like}>❤️{likes}</Text>
-          <Ionicons name="share-outline" size={18} />
+          <Ionicons name="share-outline" size={18} color={Colors.Off_Black} />
         </View>
       </View>
     </View>

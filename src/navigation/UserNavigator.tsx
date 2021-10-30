@@ -47,22 +47,12 @@ export default React.memo(function UserNavigator() {
         name="TweetPost"
         component={TweetPostScreen}
       />
-      <UserNavigation.Screen
-        options={() => ({
-          animationEnabled: false,
-          headerShown: false,
-        })}
-        name="UserProfile"
-        component={UserProfileScreen}
-      />
     </UserNavigation.Navigator>
   );
 });
 export type UserStackParamList = {
   Bottom: undefined;
-  Home: undefined;
   TweetPost: undefined;
-  UserProfile: undefined;
 };
 
 export type BottomStackParamList = {
@@ -70,6 +60,5 @@ export type BottomStackParamList = {
   UserProfile: undefined;
 };
 
-export type HomeScreenNavigationProp = StackNavigationProp<UserStackParamList, 'Home'>;
+export type HomeScreenNavigationProp = StackNavigationProp<UserStackParamList, 'Bottom'>;
 export type TweetPostScreenNavigationProp = StackNavigationProp<UserStackParamList, 'TweetPost'>;
-export type UserProfileScreenNavigationProp = StackNavigationProp<UserStackParamList, 'UserProfile'>;

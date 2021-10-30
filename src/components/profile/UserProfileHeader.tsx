@@ -17,26 +17,6 @@ interface UserProfileHeaderProps {
 }
 
 const styles = StyleSheet.create({
-  userProfileScreen: {
-    backgroundColor: Colors.Primary_Color,
-    flex: 1,
-  },
-  container: {
-    width: '90%',
-    alignSelf: 'center',
-    marginTop: 10,
-  },
-  tweetWrapper: {
-    flexDirection: 'row',
-    marginTop: 20,
-    alignItems: 'center',
-    overflow: 'hidden',
-  },
-  topButtonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
   userImageWrapper: {
     position: 'absolute',
     top: -40,
@@ -50,25 +30,13 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderWidth: 4,
   },
-  cancelButton: {
-    color: Colors.Primary_Color,
-  },
-  postButton: {
-    backgroundColor: Colors.Primary_Color,
-    borderRadius: 15,
-    paddingHorizontal: 15,
-    paddingVertical: 5,
-  },
-  postText: {
-    color: Colors.WHITE,
-  },
   textInput: {
     flex: 1,
   },
-
   nameHeading: {
     fontSize: 24,
     fontWeight: 'bold',
+    color: Colors.Off_Black,
   },
   twitterHandle: {
     color: Colors.GREY_6,
@@ -76,6 +44,7 @@ const styles = StyleSheet.create({
   },
   shortBio: {
     paddingVertical: 5,
+    color: Colors.Off_Black,
   },
   location: {
     paddingVertical: 5,
@@ -113,6 +82,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   contentContainerStyle: { flexGrow: 1, backgroundColor: Colors.WHITE },
+  text: {
+    color: Colors.Off_Black,
+  },
 });
 
 export function UserProfileHeader({
@@ -147,9 +119,9 @@ export function UserProfileHeader({
               <Text style={styles.location}>{`${location}`}</Text>
             </View>
             <View style={styles.rowContainer}>
-              <Text>{following}</Text>
+              <Text style={styles.text}>{following}</Text>
               <Text style={styles.greyText}>Following</Text>
-              <Text>{followers}</Text>
+              <Text style={styles.text}>{followers}</Text>
               <Text style={styles.greyText}>Followers</Text>
             </View>
           </View>

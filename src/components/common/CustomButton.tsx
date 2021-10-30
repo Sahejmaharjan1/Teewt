@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     color: Colors.WHITE,
+    marginBottom: 20,
   },
   center: {
     alignSelf: 'center',

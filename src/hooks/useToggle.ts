@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FunctionWithParam } from 'utils/types';
+import { FunctionWithParam } from '../utils/types';
 
 export default function useToggle(defaultValue: boolean): [boolean, FunctionWithParam<boolean | null>] {
   const [value, setValue] = useState<boolean>(defaultValue);

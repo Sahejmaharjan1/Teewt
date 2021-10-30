@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { GenericObject } from '../../utils/types';
+import { GenericObject } from '../utils/types';
 
 export default function usePrevious(value: GenericObject): GenericObject<unknown> | undefined {
   const currentRef = useRef<GenericObject>(value);

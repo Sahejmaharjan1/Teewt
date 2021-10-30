@@ -61,7 +61,7 @@ export function BottomNav({ navigation }: BottomTabBarProps) {
   return (
     <View style={[styles.nav, { bottom: insets.bottom }]}>
       <Pressable onPress={() => navigation.navigate('Home')}>
-        <Entypo name="home" size={30} />
+        <Entypo name="home" size={30} color={Colors.Off_Black} />
       </Pressable>
       <View style={styles.outer}>
         <Pressable onPress={() => navigation.navigate('TweetPost')}>

@@ -45,6 +45,9 @@ const styles = StyleSheet.create({
   contentContainerStyle: {
     flex: 1,
   },
+  longBio: {
+    color: Colors.Off_Black,
+  },
 });
 
 export function UserModal({ longBio, closeModal }: UserModalProps) {
@@ -57,7 +60,7 @@ export function UserModal({ longBio, closeModal }: UserModalProps) {
           </View>
         </Pressable>
         <View style={styles.userBioContainer}>
-          <Text>{longBio}</Text>
+          <Text style={styles.longBio}>{longBio}</Text>
           <View style={styles.userHandle}>
             <View style={styles.rowContainer}>
               <Foundation name="web" color={Colors.GREY_5} size={20} />

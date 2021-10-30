@@ -1,7 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Formik } from 'formik';
 import { View, Pressable, Keyboard, KeyboardAvoidingView, Text } from 'react-native';
-// import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import * as Yup from 'yup';
 import styles from './formStyles';
 import { InputField } from '../common/InputField';
@@ -46,12 +45,7 @@ export const LoginForm: FC = () => {
   };
 
   return (
-    <KeyboardAvoidingView
-      style={styles.loginForm}
-      contentContainerStyle={styles.loginForm_container}
-      // keyboardShouldPersistTaps="always"
-      // showsVerticalScrollIndicator={false}
-    >
+    <KeyboardAvoidingView style={styles.loginForm} contentContainerStyle={styles.loginForm_container}>
       <Pressable onPress={Keyboard.dismiss} style={styles.loginForm_containerPressable}>
         <Text style={styles.loginForm_heading}>Log In</Text>
         <View style={styles.loginForm_containerWrapper}>

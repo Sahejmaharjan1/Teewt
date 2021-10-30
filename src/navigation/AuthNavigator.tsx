@@ -12,9 +12,7 @@ const AuthNavigation: FC = () => {
         headerShown: false,
       }}
     >
-      <>
-        <AuthNavigator.Screen name="Login" component={LoginScreen} />
-      </>
+      <AuthNavigator.Screen name="Login" component={LoginScreen} />
     </AuthNavigator.Navigator>
   );
 };
