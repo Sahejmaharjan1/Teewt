@@ -31,6 +31,7 @@ const UserProfileScreen: FC<TweetPostScreenProps> = ({}: TweetPostScreenProps) =
     return allUserProfileData?.users.find((data) => data.id === user!.user_id);
   };
   const renderItem = ({ item, index }: { item: Feed; index: number }) => {
+    // eslint-disable-next-line no-shadow
     const getUserData = (userId: string) => {
       return allUserProfileData?.users.find((data) => data.id === userId);
     };

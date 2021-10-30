@@ -9,7 +9,7 @@ const LoginScreen: FC = () => {
     <SafeAreaView style={styles.loginScreen}>
       <ScrollView contentContainerStyle={styles.loginScreen_authContainer}>
         <View style={styles.loginScreen_iconWrapper}>
-          <Image source={require('../assets/Teewter_Logo.png')} style={styles.loginScreen_icon} />
+          <Image source={require('../assets/Teewter_Logo_White.png')} style={styles.loginScreen_icon} />
         </View>
         <LoginForm />
       </ScrollView>
